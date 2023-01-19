@@ -6,7 +6,7 @@ const Stack = createNativeStackNavigator();
 
 export const RootNavigation = () => {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="NewsTab" component={NewsTabNavigation} />
             <Stack.Screen name="NewsDetail" component={NewsDetailScreen} />
         </Stack.Navigator>
